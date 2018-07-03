@@ -31,7 +31,7 @@ restService.post("/message", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.message.toLowerCase()) {
     //Speech Synthesis Markup Language 
-    case "message":
+    case "cookie":
       speech =
         '<speak><audio src="https://ocbenji.com/aden/Crazy.mp3">did not get your audio file</audio></speak>';
       break;
