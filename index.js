@@ -27,11 +27,11 @@ restService.post("/echo", function(req, res) {
   });
 });
 
-restService.post("/audio", function(req, res) {
+restService.post("/message", function(req, res) {
   var speech = "";
-  switch (req.body.result.parameters.AudioSample.toLowerCase()) {
+  switch (req.body.result.parameters.message.toLowerCase()) {
     //Speech Synthesis Markup Language 
-    case "music one":
+    case "message":
       speech =
         '<speak><audio src="https://ocbenji.com/aden/Crazy.mp3">did not get your audio file</audio></speak>';
       break;
